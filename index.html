@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sudarsi Tejasa Reethi — Cybersecurity Undergraduate | Aspiring SOC Analyst" />
+  <title>Sudarsi Tejasa Reethi | Cybersecurity Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .nav-link.active { color:#2563EB; font-weight:600; }
+    .skill-tab.active { border-color:#2563EB; color:#2563EB; font-weight:600; }
+    .chart-container { max-width:600px; margin:auto; height:360px; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+<!-- HEADER -->
+<header class="bg-white/90 backdrop-blur sticky top-0 z-50 shadow-sm">
+  <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="text-xl font-bold text-blue-600">STR</div>
+    <div class="hidden md:flex space-x-8">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#tools" class="nav-link">SOC Tools</a>
+      <a href="#education" class="nav-link">Education</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container mx-auto px-4 sm:px-6">
+
+<!-- HOME -->
+<section id="home" class="min-h-[85vh] flex flex-col justify-center py-16">
+  <div class="max-w-4xl mx-auto space-y-6">
+    <h1 class="text-4xl sm:text-5xl font-bold">Sudarsi Tejasa Reethi</h1>
+    <p class="text-xl text-blue-600 font-semibold">
+      Cybersecurity Undergraduate • Aspiring SOC / Security Analyst
+    </p>
+
+    <p class="text-gray-600 max-w-3xl">
+      Passionate about cybersecurity, ethical hacking, and network defense. Strong foundations
+      in OS, networks, and Python with hands-on security projects and cloud exposure.
+    </p>
+
+    <div class="flex flex-wrap gap-4 text-gray-600">
+      <span>📍 Andhra Pradesh, India</span>
+      <span>📞 <a href="tel:+919581022529" class="hover:text-blue-600">9581022529</a></span>
+      <span>📧 <a href="mailto:reethi.ranga10@gmail.com" class="hover:text-blue-600">reethi.ranga10@gmail.com</a></span>
+    </div>
+
+    <div class="flex gap-4">
+      <a href="Sudarsi_Tejasa_Reethi_Cybersecurity_Resume.pdf"
+         class="px-6 py-3 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700">
+        Download Resume (PDF)
+      </a>
+      <a href="https://www.linkedin.com/in/sudarsi-tejasa-reethi"
+         target="_blank"
+         class="px-6 py-3 rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-50">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-16">
+  <h2 class="text-3xl font-bold text-center mb-6">Core Cybersecurity Skills</h2>
+
+  <div class="flex justify-center gap-2 border-b pb-2">
+    <button class="skill-tab active px-4 py-2 border-b-2" data-skill="security">Security</button>
+    <button class="skill-tab px-4 py-2 border-b-2 border-transparent" data-skill="programming">Programming</button>
+    <button class="skill-tab px-4 py-2 border-b-2 border-transparent" data-skill="core">Core CS</button>
+  </div>
+
+  <div class="chart-container mt-8">
+    <canvas id="skillsChart"></canvas>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-16 bg-white rounded-xl shadow-lg p-8">
+  <h2 class="text-3xl font-bold text-center mb-8">Security Projects</h2>
+
+  <div class="space-y-6 max-w-4xl mx-auto">
+    <div>
+      <h3 class="text-xl font-bold">🔐 Password Strength Analyzer</h3>
+      <p class="text-gray-700">
+        Python-based security tool to evaluate password strength using entropy,
+        length, and character diversity to prevent weak authentication.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold">🌐 Network Port Scanner</h3>
+      <p class="text-gray-700">
+        Built a TCP port scanner to identify open ports and running services,
+        understanding reconnaissance and attack surfaces.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold">🔑 Secure Login System</h3>
+      <p class="text-gray-700">
+        Implemented input validation and secure password handling to mitigate
+        common vulnerabilities in authentication systems.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SOC TOOLS -->
+<section id="tools" class="py-16">
+  <h2 class="text-3xl font-bold text-center mb-8">SOC Tools & Technologies</h2>
+
+  <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h3 class="font-bold mb-2">Security Tools</h3>
+      <ul class="list-disc pl-5 text-gray-700">
+        <li>Nmap (Basics)</li>
+        <li>Wireshark (Packet Analysis)</li>
+        <li>Burp Suite (Intro)</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h3 class="font-bold mb-2">Operating Systems</h3>
+      <ul class="list-disc pl-5 text-gray-700">
+        <li>Linux (Fundamentals)</li>
+        <li>Windows Security Basics</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h3 class="font-bold mb-2">Cloud & Others</h3>
+      <ul class="list-disc pl-5 text-gray-700">
+        <li>AWS Fundamentals</li>
+        <li>Git & Version Control</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-16">
+  <h2 class="text-3xl font-bold text-center mb-8">Education & Certifications</h2>
+
+  <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h3 class="text-xl font-bold text-blue-600">B.Tech in Cybersecurity</h3>
+      <p>Sri Venkateswara College of Engineering</p>
+      <p>2023 – 2027 | CGPA: 8.33</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h3 class="text-xl font-bold text-blue-600">Certifications</h3>
+      <ul class="list-disc pl-5">
+        <li>Ethical Hacking – Udemy</li>
+        <li>Python Certification – Udemy</li>
+        <li>Cyber & Information Security Association – Technical Team</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-gray-900 text-gray-300 py-10 text-center">
+  <a href="Sudarsi_Tejasa_Reethi_Cybersecurity_Resume.pdf"
+     class="inline-block mb-4 px-6 py-3 bg-blue-600 text-white rounded-lg">
+    Download Resume
+  </a>
+  <p>©️ 2026 Sudarsi Tejasa Reethi • Cybersecurity Portfolio</p>
+</footer>
+
+<script>
+const skillsData = {
+  security: { labels: ['Ethical Hacking','Network Security','Auth Security'], data:[80,75,70] },
+  programming: { labels: ['Python','C','C++','HTML/CSS'], data:[80,70,65,70] },
+  core: { labels: ['OS','Networks','DBMS','DSA'], data:[75,80,70,70] }
+};
+
+const ctx = document.getElementById('skillsChart').getContext('2d');
+let chart = new Chart(ctx,{
+  type:'radar',
+  data:{ labels:skillsData.security.labels,
+    datasets:[{ data:skillsData.security.data, backgroundColor:'rgba(37,99,235,0.2)', borderColor:'#2563EB'}]},
+  options:{ scales:{ r:{ min:0, max:100 }}, plugins:{ legend:{ display:false }}}
+});
+
+document.querySelectorAll('.skill-tab').forEach(tab=>{
+  tab.onclick=()=>{
+    document.querySelectorAll('.skill-tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    chart.data.labels=skillsData[tab.dataset.skill].labels;
+    chart.data.datasets[0].data=skillsData[tab.dataset.skill].data;
+    chart.update();
+  }
+});
+</script>
+
+</body>
+</html>
